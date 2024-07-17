@@ -1,49 +1,66 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-ul{
-    margin: 0;
-    padding: 0;
-}
-a{ text-decoration:none ;}
-body{
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+.flex-section{
+    width: 100%;
+    padding: 80PX 0PX;
 
 }
-header{
-    width: 100px;
-    padding: 5px ;
+.container{
+    width: 1140PX;
+    margin: 0 auto;
 }
-.container {
-    width: 1140px;
-    margin: 0, auto;
+
+.flex-box{
+    border: 5px solid rgb(79, 56, 213);
+    height: 60vh;
     display: flex;
-    align-items: center;
-   
+    justify-content: right;
+    align-items: flex-end ;
 }
-.logo {
-    flex-basis: 20%;
+
+.box1{
+    width: 120px;
+    height: 120px;
+    background: rgb(3, 158, 247);
+    margin: 10px;
+    font-size: 50px;
+    color: rgb(65, 0, 51);
+    text-align: center;
+    line-height: 120px;
+    box-shadow: 14px 14px 5px 3px rgba(146, 78, 78, 0.69);
+    
 }
-.buttoms {
-    flex-basis: 20%; 
+.icons{
+    text-align: center;
 }
-.nav{
-    flex-basis: 60%;
+
+.icons ul {
+    margin: 0;
+    padding: 0;
 }
-.nav ul li{
-    list-style-type: none;
+
+.icons ul li {
+    list-style: none;
     display: inline-block;
-    margin-right: 25px;
-    color: #0e72cc;
+    margin: 25px 10px;
+    width: 60px;
+    height: 60px;
+    background: #2e272f;
+    line-height: 65px;
+    border-radius: 20px 0px;
+    transition: 0.5s;
+
 }
-.buttons button{
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background: #0e72cc;
-    border: 1px solid #0e72cc;
 
+.icons ul li a i {
+    color: rgb(255, 240, 246);
+    font-size: 25px;
+}
 
+.icons ul li:hover  {
+    background: rgb(233, 106, 227);
+    border-radius: 0px 20px;
+    transition: 0.5s;
+}
+
+.icons ul li:hover .fa {
+    color:rgba(52, 59, 57, 0.774) ;
 }
